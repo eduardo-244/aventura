@@ -1,1 +1,3 @@
-const avanca = document
+const avanca = document. querySelectorAll('.btn-proximo');
+ 
+avanca.for
