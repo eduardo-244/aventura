@@ -18,3 +18,18 @@ if(proximoElemento){
 });
 });
 
+// reinicia o jogo ao clicar no botão de reinicio
+if (reiniciarBtn) {
+    reiniciarBtn.addEventListener('click', () => {
+        const atual = document.querySelector(' .ativo');
+        atual.classList.remove('ativo');
+        document.getElementById('passo-0').classList.add('ativo');
+
+    });
+
+}
+document.getAnimations
+atual.addEventListener('proximo-passo');
+('reiniciar') => ('passo-0');
+// reinicia o jogo ao clicar no botão de reiniciar agora
+if(proximoPasso)-('passo=0')'
