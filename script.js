@@ -1,30 +1,28 @@
-const avanca = document.querySelectorA11('btn.proximo');
-const reiniciarBtn = document.getElementById('btn-reiniciar');
+const avanca = document.querySelectorAll('btn.proximo')
+const reiniciarBtn = document.getElementById('bth-reiniciar')
 
-avanca.forEach(button =>
-button.addEventListener('click', function() {
-     const atual = document,querySelector('.ativo');
-     const proximoPasso = 'passo- '+this.getAttribute('data-proximo');
+avanca.forEach(button => {
+button.addEventListener('click', function () {
+const atual = document.querySelector('.ativo');
+const proximoPasso = 'passo-' + this.getAttribute('data-proximo');
 
 atual.classList.remove('ativo');
-const proximoElemento= document.getElementById(proximoPasso);
+const proximoElemento = document.getElementById(proximoPasso);
 
-if(proximoElemento){
-    proximoElemento.classList.add('ativo');
-}else {
-    console.error(`Elemento com ID "${proximoPasso}" não encontrado.`)
+if (proximoElemento) {
+proximoElemento.classList.add('ativo');
+} else {
+console.error(`Elemento com ID "${proximoPasso}"não encontrado.`);
 }
-
 });
 });
 
-// reinicia o jogo ao clicar no botão de reinicio
+
+// Reinicia o jogo ao clicar no botão de reinício
 if (reiniciarBtn) {
-    reiniciarBtn.addEventListener('click', () => {
-        const atual = document.querySelector(' .ativo');
-        atual.classList.remove('ativo');
-        document.getElementById('passo-0').classList.add('ativo');
-
-    });
-
+reiniciarBtn.addEventListener('click', () => {
+const atual = document.querySelector('.ativo');
+atual.classList.remove('ativo');
+document.getElementById('passo-0').classList.add('ativo');
+});
 }
