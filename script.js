@@ -28,8 +28,3 @@ if (reiniciarBtn) {
     });
 
 }
-document.getAnimations
-atual.addEventListener('proximo-passo');
-('reiniciar') => ('passo-0');
-// reinicia o jogo ao clicar no botão de reiniciar agora
-if(proximoPasso)-('passo=0')'
